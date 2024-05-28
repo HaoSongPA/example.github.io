@@ -1,0 +1,42 @@
+:root {
+  --main-background-color: #2e3a4d;
+  --main-text-color: white;
+  --h1-size: 36px;
+}
+
+body {
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 30px;
+}
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+  /* Then we define the flow direction and if we allow the items to wrap */
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* As a shortcut we can define the same using 'flex-flow' property it’s a shorthand property for setting both the flex-directions and 'flex-wrap'
+    flex-flow: row wrap; */
+  /* Then we define how is distributed the remaining space */
+  justify-content: center;
+
+  /* Then if we want we define if we want a gap between each of our html elements */
+  gap: 30px;
+}
+
+.flex-item {
+  background-color: #f8b7cd;
+  border: 3px dotted grey;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}

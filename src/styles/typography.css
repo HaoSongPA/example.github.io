@@ -1,0 +1,15 @@
+:root{
+  --main-background-color: #34495E;
+  --main-text-color: white;
+  --font-size: 18px;
+  --h1-size: 40px;
+  --h2-size: 30px;
+  --h3-size: 24px;
+  --font-family-safe: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  font-size: var(--font-size);
+  font-family: var(--font-family-safe);
+}
